@@ -10,4 +10,4 @@ Log into your Expression Engine admin system and enable the plugin.
 ## Usage
 After you've enabled the plugin, you'll need to insert a reference to the javascript in the header or footer of your HTML template using the following tag: <code>{exp:confluencee:script}</code> (Please note that this script requires jQuery).
 
-To insert content onto your page, use the following EE tag wherever you want the content to be displayed: <code>{exp:confluencee url="http://documentation.red-gate.com/" page_id="10617318"}</code>
+To insert content onto your page, use the following EE tag wherever you want the content to be displayed: <code>{exp:confluencee url="http://confluence.example.com/" page_id="4"}</code>
