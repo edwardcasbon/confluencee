@@ -35,7 +35,7 @@ class Confluencee {
 			
 			To use this plugin, firstly, add the '{exp:confluencee:script}' tag to the footer of your web page, then use the tag '{exp:confluencee:content}' with the following parameters:
 			
-			1. url (Mandatory) - The URL for the Confluence website including the version (e.g. http://documentation.red-gate.com/)
+			1. url (Mandatory) - The URL for the Confluence website including the version (e.g. http://confluence.example.com/)
 			
 			2. page_id (Mandatory) - The ID of the page that you want to pull content from.
 			
@@ -44,7 +44,7 @@ class Confluencee {
 			4. element_class (Optional) - The class name for the HTML element. Defaults to 'confluence'.
 			
 			Example tag: 
-			{exp:confluencee url="http://documentation.red-gate.com" page_id="10617318"}
+			{exp:confluencee url="http://confluence.example.com" page_id="4"}
 
 		<?php
 		$buffer = ob_get_contents();
