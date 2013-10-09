@@ -33,7 +33,7 @@ class Confluencee {
 		?>
 			This plugin allows you to get page content from Atlassian's Confluence wiki software. It's to be used in page templates.
 			
-			To use this plugin, firstly, add the '{exp:confluencee:script}' tag to the footer of your web page, then use the tag '{exp:confluencee:content}' with the following parameters:
+			To use this plugin, firstly, add the '{exp:confluencee:script}' tag to the footer of your web page, then use the tag '{exp:confluencee}' with the following attributes:
 			
 			1. url (Mandatory) - The URL for the Confluence website including the version (e.g. http://confluence.example.com/)
 			
