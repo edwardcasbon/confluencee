@@ -1,18 +1,18 @@
 <?php if(!defined('BASEPATH')) exit('No direct script access allowed');
 
 $plugin_info = array(
-	'pi_name'			=> 'ConfluencEE',
+	'pi_name'		=> 'ConfluencEE',
 	'pi_version'		=> '1.0',
-	'pi_author'			=> 'Edward Casbon',
+	'pi_author'		=> 'Edward Casbon',
 	'pi_author_url'		=> 'http://www.edwardcasbon.co.uk',
 	'pi_description'	=> 'Confluence plugin description goes here.',
-	'pi_usage'			=> Confluencee::usageNotes()
+	'pi_usage'		=> Confluencee::usageNotes()
 );
 
 
 class Confluencee {
 	
-	var $url 			= "";
+	var $url 		= "";
 	var $pageId 		= 0;
 	var $element 		= "div";
 	var $elementClass 	= "confluence";
@@ -20,10 +20,10 @@ class Confluencee {
 	var $return_data; // Data outputted to the template.
 	
 	public function __construct () {
-		$this->url 			= !ee()->TMPL->fetch_param('url') ? $this->apiUrl : ee()->TMPL->fetch_param('url');
-		$this->pageId 		= !ee()->TMPL->fetch_param('page_id') ? $this->pageId : ee()->TMPL->fetch_param('page_id');
-		$this->element 		= !ee()->TMPL->fetch_param('element') ? $this->element : ee()->TMPL->fetch_param('element');
-		$this->elementClass = !ee()->TMPL->fetch_param('element_class') ? $this->elementClass : ee()->TMPL->fetch_param('element_class');
+		$this->url =		!ee()->TMPL->fetch_param('url') ? $this->url : ee()->TMPL->fetch_param('url');
+		$this->pageId = 	!ee()->TMPL->fetch_param('page_id') ? $this->pageId : ee()->TMPL->fetch_param('page_id');
+		$this->element =	!ee()->TMPL->fetch_param('element') ? $this->element : ee()->TMPL->fetch_param('element');
+		$this->elementClass =	!ee()->TMPL->fetch_param('element_class') ? $this->elementClass : ee()->TMPL->fetch_param('element_class');
 				
 		$this->return_data = '<' . $this->element . ' class="' . $this->elementClass . '" data-confluenceurl="' . $this->url . '" data-confluencepageid="' . $this->pageId . '"></' . $this->element . '>';		
 	}
